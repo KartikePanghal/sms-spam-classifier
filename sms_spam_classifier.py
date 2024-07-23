@@ -65,7 +65,6 @@ print(conf_matrix)
 print('\nClassification Report:')
 print(class_report)
 
-# Visualization
 sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=['Ham', 'Spam'], yticklabels=['Ham', 'Spam'])
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
